@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --white: #ffffff;
+        --black: #000000;
+        --transparent: transparent;
+        --darkblue: #07223d;
+        --blue: #70b9ff;
+        --red: #e84e38;
+        --darkgrey: #9a9a9a;
+      }
+
+      .zrodla-header {
+        background-color: var(--darkblue);
+        height: 120px;
+        width: 100%;
+        padding: 10px 0 5px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0px;
+      }
+
+      .wroc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #e84e38;
+        border-radius: 5px;
+        color: var(--white);
+        width: 120px;
+        height: 60px;
+        text-decoration: none;
+      }
+      .font-white {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        color: white;
+      }
+
+      .font-black {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        color: rgb(0, 0, 0);
+      }
+
+      .button1-placeholder {
+        text-decoration: none;
+      }
+
+      /* .row1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: 1px solid black;
+    height: 300px;
+    width: 1200px;
+  }
+
+  .row2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: 1px solid black;
+    height: 300px;
+    width: 1200px;
+  }
+
+  .row3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: 1px solid black;
+    height: 300px;
+    width: 1200px;
+  }
+
+  .row4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: 1px solid black;
+    height: 300px;
+    width: 1200px;
+  }
+
+  .row5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: 1px solid black;
+    height: 300px;
+    width: 1200px;
+  }
+
+  .row6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: 1px solid black;
+    height: 300px;
+    width: 1200px;
+  }
+
+  .row7{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: 1px solid black;
+    height: 300px;
+    width: 1200px;
+  }
+
+
+  .row8{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: 1px solid black;
+    height: 300px;
+    width: 1200px;
+  }
+
+
+  .row9{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: 1px solid black;
+    height: 300px;
+    width: 1200px;
+  }
+
+  .row10{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: 1px solid black;
+    height: 300px;
+    width: 1200px;
+  }
+
+  .row11{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: 1px solid black;
+    height: 300px;
+    width: 1200px;
+  }
+
+  .row12{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: 1px solid black;
+    height: 300px;
+    width: 1200px;
+  }
+
+  .row13{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: 1px solid black;
+    height: 300px;
+    width: 1200px;
+  }
+
+  *{
+    box-sizing: border-box;
+  }
+
+
+
+
+
+ */
+
+      /* subsections */
+
+      /* .row11{
+    background-image: url("https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://cdn.filesafe.space/location%2FknES3eSWYIsc5YSZ3YLl%2Fimages%2F63413f4d-3691-4d3e-8e9c-31ba9bd55cf9.png?alt=media");
+    background-size: cover;
+    width: 45%;
+    margin: 20px;
+}
+
+.row12{
+    width: 45%;
+    margin: 20px;
+    word-wrap:normal;
+}
+
+.row21{
+    background-image: url("https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/knES3eSWYIsc5YSZ3YLl/media/64cabfcde17f575eda0746ee.png");
+    background-size: cover;
+    width: 45%;
+    margin: 20px;
+}
+
+.row22{
+    width: 45%;
+    margin: 20px;
+    word-wrap:normal;
+}
+
+.row31{
+    background-image: url("https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://cdn.filesafe.space/location%2FknES3eSWYIsc5YSZ3YLl%2Fimages%2F63413f4d-3691-4d3e-8e9c-31ba9bd55cf9.png?alt=media");
+    background-size: cover;
+    width: 45%;
+    margin: 20px;
+}
+
+.row32{
+    width: 45%;
+    margin: 20px;
+    word-wrap:normal;
+}
+
+.row41{
+    background-image: url("https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://cdn.filesafe.space/location%2FknES3eSWYIsc5YSZ3YLl%2Fimages%2F63413f4d-3691-4d3e-8e9c-31ba9bd55cf9.png?alt=media");
+    background-size: cover;
+    width: 45%;
+    margin: 20px;
+}
+
+.row42{
+    width: 45%;
+    margin: 20px;
+    word-wrap:normal;
+}
+
+.row51{
+    background-image: url("https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://cdn.filesafe.space/location%2FknES3eSWYIsc5YSZ3YLl%2Fimages%2F63413f4d-3691-4d3e-8e9c-31ba9bd55cf9.png?alt=media");
+    background-size: cover;
+    width: 45%;
+    margin: 20px;
+}
+
+.row52{
+    width: 45%;
+    margin: 20px;
+    word-wrap:normal;
+}
+
+.row61{
+    background-image: url("https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://cdn.filesafe.space/location%2FknES3eSWYIsc5YSZ3YLl%2Fimages%2F63413f4d-3691-4d3e-8e9c-31ba9bd55cf9.png?alt=media");
+    background-size: cover;
+    width: 45%;
+    margin: 20px;
+}
+
+.row62{
+    width: 45%;
+    margin: 20px;
+    word-wrap:normal;
+}
+
+.row71{
+    background-image: url("https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://cdn.filesafe.space/location%2FknES3eSWYIsc5YSZ3YLl%2Fimages%2F63413f4d-3691-4d3e-8e9c-31ba9bd55cf9.png?alt=media");
+    background-size: cover;
+    width: 45%;
+    margin: 20px;
+}
+
+.row72{
+    width: 45%;
+    margin: 20px;
+    word-wrap:normal;
+}
+
+.row81{
+    background-image: url("https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://cdn.filesafe.space/location%2FknES3eSWYIsc5YSZ3YLl%2Fimages%2F63413f4d-3691-4d3e-8e9c-31ba9bd55cf9.png?alt=media");
+    background-size: cover;
+    width: 45%;
+    margin: 20px;
+}
+
+.row82{
+    width: 45%;
+    margin: 20px;
+    word-wrap:normal;
+}
+
+.row91{
+    background-image: url("https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://cdn.filesafe.space/location%2FknES3eSWYIsc5YSZ3YLl%2Fimages%2F63413f4d-3691-4d3e-8e9c-31ba9bd55cf9.png?alt=media");
+    background-size: cover;
+    width: 45%;
+    margin: 20px;
+}
+
+.row92{
+    width: 45%;
+    margin: 20px;
+    word-wrap:normal;
+}
+
+.row101{
+    background-image: url("https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://cdn.filesafe.space/location%2FknES3eSWYIsc5YSZ3YLl%2Fimages%2F63413f4d-3691-4d3e-8e9c-31ba9bd55cf9.png?alt=media");
+    background-size: cover;
+    width: 45%;
+    margin: 20px;
+}
+
+.row102{
+    width: 45%;
+    margin: 20px;
+    word-wrap:normal;
+}
+
+.row111{
+    background-image: url("https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://cdn.filesafe.space/location%2FknES3eSWYIsc5YSZ3YLl%2Fimages%2F63413f4d-3691-4d3e-8e9c-31ba9bd55cf9.png?alt=media");
+    background-size: cover;
+    width: 45%;
+    margin: 20px;
+}
+
+.row112{
+    width: 45%;
+    margin: 20px;
+    word-wrap:normal;
+}
+
+.row121{
+    background-image: url("https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://cdn.filesafe.space/location%2FknES3eSWYIsc5YSZ3YLl%2Fimages%2F63413f4d-3691-4d3e-8e9c-31ba9bd55cf9.png?alt=media");
+    background-size: cover;
+    width: 45%;
+    margin: 20px;
+}
+
+.row122{
+    width: 45%;
+    margin: 20px;
+    word-wrap:normal;
+}
+
+.row131{
+    background-image: url("https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://cdn.filesafe.space/location%2FknES3eSWYIsc5YSZ3YLl%2Fimages%2F63413f4d-3691-4d3e-8e9c-31ba9bd55cf9.png?alt=media");
+    background-size: cover;
+    width: 45%;
+    margin: 20px;
+}
+
+.row132{
+    width: 45%;
+    margin: 20px;
+    word-wrap:normal;
+} */
+
+      .row {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid black;
+        width: 1719px;
+      }
+
+      body {
+        max-width: 1519px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="zrodla-header">
+      <div class="logo">
+        <a href="page.html"
+          ><img
+            src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://cdn.filesafe.space/location%2FknES3eSWYIsc5YSZ3YLl%2Fimages%2F63413f4d-3691-4d3e-8e9c-31ba9bd55cf9.png?alt=media"
+            alt=""
+            style="width: 300px !important"
+            class="logo"
+            loading="lazy"
+        /></a>
+      </div>
+      <div class="wroc">
+        <a href="page.html" class="button1-placeholder"
+          ><h1 class="font-white" id="button1-placeholder1">Wróć</h1></a
+        >
+      </div>
+    </div>
+    <div class="zrodla-middle">
+      <div class="section">
+        <div class="row1 row">
+          <div class="row11">
+            <img
+              src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://cdn.filesafe.space/location%2FknES3eSWYIsc5YSZ3YLl%2Fimages%2F63413f4d-3691-4d3e-8e9c-31ba9bd55cf9.png?alt=media"
+              alt=""
+              style="width: 300px !important"
+              class="logo"
+              loading="lazy"
+            />
+          </div>
+          <div class="row12">
+            https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://cdn.filesafe.space/location%2FknES3eSWYIsc5YSZ3YLl%2Fimages%2F63413f4d-3691-4d3e-8e9c-31ba9bd55cf9.png?alt=media
+          </div>
+        </div>
+
+        <div class="row2 row">
+          <div class="row21">
+            <img
+              src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/knES3eSWYIsc5YSZ3YLl/media/64cabfcde17f575eda0746ee.png"
+              alt=""
+              style=""
+              class="shape-5 img-none img-border-none img-shadow-none img-effects-none hl-optimized mw-100"
+              loading="lazy"
+            />
+          </div>
+          <div class="row22">
+            https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/knES3eSWYIsc5YSZ3YLl/media/64cabfcde17f575eda0746ee.png
+          </div>
+        </div>
+
+        <div class="row3 row">
+          <div class="row31">
+            <img
+              src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://cdn.filesafe.space/location%2FknES3eSWYIsc5YSZ3YLl%2Fimages%2F8bdd0929-f9f9-4557-b02c-da407560e5a3.png?alt=media"
+              alt=""
+              style=""
+              class="img-none img-border-none img-shadow-none img-effects-none hl-optimized mw-100"
+              loading="lazy"
+            />
+          </div>
+          <div class="row32">
+            https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://cdn.filesafe.space/location%2FknES3eSWYIsc5YSZ3YLl%2Fimages%2F8bdd0929-f9f9-4557-b02c-da407560e5a3.png?alt=media
+          </div>
+        </div>
+
+        <div class="row4 row">
+          <div class="row41">
+            <img
+              src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/knES3eSWYIsc5YSZ3YLl/media/649b3399c68129aad68708cc.png"
+              alt=""
+              style="width: 675px !important"
+              class="shape-2 img-none img-border-none img-shadow-none img-effects-none hl-optimized mw-100"
+              loading="lazy"
+            />
+          </div>
+          <div class="row42">
+            https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/knES3eSWYIsc5YSZ3YLl/media/649b3399c68129aad68708cc.png
+          </div>
+        </div>
+
+        <div class="row5 row">
+          <div class="row51">
+            <img
+              src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/knES3eSWYIsc5YSZ3YLl/media/64cac0abe17f572741074950.png"
+              alt=""
+              style=""
+              class="shape-4 img-none img-border-none img-shadow-none img-effects-none hl-optimized mw-100"
+              loading="lazy"
+            />
+          </div>
+          <div class="row52">
+            https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/knES3eSWYIsc5YSZ3YLl/media/64cac0abe17f572741074950.png
+          </div>
+        </div>
+
+        <div class="row6 row">
+          <div class="row61">
+            <img
+              src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/knES3eSWYIsc5YSZ3YLl/media/64cac5e6e17f57cb940757b5.png"
+              alt=""
+              style=""
+              class="shape-4 img-none img-border-none img-shadow-none img-effects-none hl-optimized mw-100"
+              loading="lazy"
+            />
+          </div>
+          <div class="row62">
+            https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/knES3eSWYIsc5YSZ3YLl/media/64cac5e6e17f57cb940757b5.png
+          </div>
+        </div>
+
+        <div class="row7 row">
+          <div class="row71">
+            <img
+              alt=""
+              class="hCL kVc L4E MIw"
+              fetchpriority="auto"
+              loading="auto"
+              src="https://i.pinimg.com/564x/93/33/83/9333837b56eae95f709111d4e59024bd.jpg"
+            />
+          </div>
+          <div class="row72">
+            https://i.pinimg.com/564x/93/33/83/9333837b56eae95f709111d4e59024bd.jpg
+          </div>
+        </div>
+
+        <div class="row8 row">
+          <div class="row81">
+            <img
+              src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/knES3eSWYIsc5YSZ3YLl/media/64cac5e6e17f57cb940757b5.png"
+              alt=""
+              style=""
+              class="shape-4 img-none img-border-none img-shadow-none img-effects-none hl-optimized mw-100"
+              loading="lazy"
+            />
+          </div>
+          <div class="row82">
+            https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/knES3eSWYIsc5YSZ3YLl/media/64cac5e6e17f57cb940757b5.png
+          </div>
+        </div>
+
+        <div class="row9 row">
+          <div class="row91">
+            <img
+              src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/knES3eSWYIsc5YSZ3YLl/media/64cac5ff1adb23842271cb36.png"
+              alt=""
+              style=""
+              class="shape-4 img-none img-border-none img-shadow-none img-effects-none hl-optimized mw-100"
+              loading="lazy"
+            />
+          </div>
+          <div class="row92">
+            https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/knES3eSWYIsc5YSZ3YLl/media/64cac5ff1adb23842271cb36.png
+          </div>
+        </div>
+
+        <div class="row10 row">
+          <div class="row101">
+            <img
+              id="imgsaved"
+              src="https://cdn.dribbble.com/users/4358240/screenshots/14825308/preview.gif"
+              alt=""
+            />
+          </div>
+          <div class="row102">
+            https://cdn.dribbble.com/users/4358240/screenshots/14825308/preview.gif
+          </div>
+        </div>
+
+        <div class="row11 row">
+          <div class="row111">
+            <img
+              class="avast-img"
+              src="https://www.safetydetective.com/wp-content/uploads/2018/05/Avast_Premium-300x342.png"
+              width="300"
+              height="342"
+              alt="Avast"
+              mobile_src="https://www.safetydetective.com/wp-content/uploads/2018/05/Avast_Premium-65x74.png"
+            />
+          </div>
+          <div class="row112">
+            https://www.safetydetective.com/wp-content/uploads/2018/05/Avast_Premium-300x342.png
+          </div>
+        </div>
+
+        <div class="row12 row">
+          <div class="row121">
+            <img
+              src="https://uploads-ssl.webflow.com/6550e6e7f224407ac90384c5/655b76972a4a4972f4c15924_2%20phones.png"
+              loading="lazy"
+              id=""
+              alt=""
+              class="phones7"
+            />
+          </div>
+          <div class="row122">
+            https://uploads-ssl.webflow.com/6550e6e7f224407ac90384c5/655b76972a4a4972f4c15924_2%20phones.png
+          </div>
+        </div>
+
+        <div class="row13 row">
+          <div class="row131">
+            <img
+              alt="File:VeraCrypt Logo.svg"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/VeraCrypt_Logo.svg/512px-VeraCrypt_Logo.svg.png?20210416041805"
+              decoding="async"
+              width="150"
+              height="120"
+              srcset="
+                https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/VeraCrypt_Logo.svg/768px-VeraCrypt_Logo.svg.png?20210416041805  1.5x,
+                https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/VeraCrypt_Logo.svg/1024px-VeraCrypt_Logo.svg.png?20210416041805 2x
+              "
+              data-file-width="512"
+              data-file-height="420"
+              id="VeraCrypt-logo"
+            />
+          </div>
+          <div class="row132">
+            https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/VeraCrypt_Logo.svg/512px-VeraCrypt_Logo.svg.png?20210416041805
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="zrodla-footer"></div>
+  </body>
+</html>
